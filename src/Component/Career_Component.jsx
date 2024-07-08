@@ -9,12 +9,12 @@ const Career_Component = () => {
       company: "Revalsys Technology",
       period: "Sep 2023 - Present",
       description: `
-        - Developing scalable web applications using ASP.NET and .NET.
-        - Working on RESTful APIs to enhance application interconnectivity.
-        - Implementing and managing Windows Services for various applications.
-        - Utilizing ADO.NET for efficient database interactions.
-        - Engaging with SQL Server for database management and query optimization.
-        - Developing and consuming WCF (Windows Communication Foundation) services.
+         Developing scalable web applications using ASP.NET and .NET.
+         Working on RESTful APIs to enhance application interconnectivity.
+         Implementing and managing Windows Services for various applications.
+         Utilizing ADO.NET for efficient database interactions.
+         Engaging with SQL Server for database management and query optimization.
+         Developing and consuming WCF (Windows Communication Foundation) services.
       `,
       icon: <FaBriefcase className="text-blue-600 dark:text-blue-400" />,
     },
@@ -25,10 +25,10 @@ const Career_Component = () => {
       company: "Sathya Technology, Hyderabad",
       period: "2023",
       description: `
-        - Completed comprehensive .NET Full Stack training.
-        - Acquired proficiency in C#, JavaScript, and SQL Server.
-        - Gained expertise in CSS for styling and design.
-        - Mastered .NET Framework and .NET Core for robust application development.
+         Completed comprehensive .NET Full Stack training.
+         Acquired proficiency in C#, JavaScript, and SQL Server.
+         Gained expertise in CSS for styling and design.
+         Mastered .NET Framework and .NET Core for robust application development.
       `,
       icon: <FaGraduationCap className="text-green-600 dark:text-green-400" />,
     },
@@ -41,9 +41,9 @@ const Career_Component = () => {
       institution: "ANC College, Warora, Maharashtra",
       period: "2019 - 2022",
       description: `
-        - Graduated with a focus on Chemistry, Zoology, and Biology.
-        - Developed strong analytical and problem-solving skills.
-        - Gained a robust understanding of scientific principles and methodologies.
+         Graduated with a focus on Chemistry, Zoology, and Biology.
+         Developed strong analytical and problem-solving skills.
+         Gained a robust understanding of scientific principles and methodologies.
       `,
       icon: <FaGraduationCap className="text-green-600 dark:text-green-400" />,
     },,
@@ -52,8 +52,8 @@ const Career_Component = () => {
       institution: "ANC College, Warora, Maharashtra",
       period: "2017 - 2019",
       description: `
-        - Completed 12th grade with a focus on Biology, Zoology, Physics, and Chemistry.
-        - Developed a foundational understanding of biological sciences and physical principles.
+       Completed 12th grade with a focus on Biology, Zoology, Physics, and Chemistry.
+       Developed a foundational understanding of biological sciences and physical principles.
       `,
       icon: <FaGraduationCap className="text-green-600 dark:text-green-400" />,
     },
