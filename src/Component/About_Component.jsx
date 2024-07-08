@@ -23,7 +23,7 @@ const About_Component = () => {
               Passionate .NET Software Developer with experience in crafting scalable solutions and a knack for problem-solving.
             </p>
             <a
-              href="/cv.pdf" // Example link to download CV file
+              href="./Images/Chirag Resume.pdf" 
               className="inline-block mt-4 px-6 py-3 bg-blue-600 text-white rounded-lg transition duration-300 hover:bg-blue-700"
               download
             >

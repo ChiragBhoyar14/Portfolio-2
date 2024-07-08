@@ -97,8 +97,8 @@ const Header_Component = ({ darkMode }) => {
             {/* Action Buttons */}
             <div className="flex gap-4 justify-center lg:justify-start">
               <motion.a
-                href="/ChiragBhoyar_CV.pdf"
-                download="ChiragBhoyar_CV.pdf"
+                href="./Images/Chirag Resume.pdf"
+                download="./Images/Chirag Resume.pdf"
                 className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-blue-600 rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
