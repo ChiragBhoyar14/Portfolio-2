@@ -60,7 +60,7 @@ const Career_Component = () => {
     {
       title: "Secondary (10th Grade)",
       institution: "Lokmany Vidhalaya",
-      period: "2017",
+      period: "2019-2022",
       description: "Completed 10th grade with distinction.",
       icon: <FaGraduationCap className="text-green-600 dark:text-green-400" />,
     },
@@ -70,7 +70,7 @@ const Career_Component = () => {
   // Basketball details
   const basketballExperience = {
     title: "Basketball Player",
-    company: "XYZ University",
+    company: "Gondwana University",
     period: "2015 - 2017",
     description: "Represented the university in various intercollegiate basketball tournaments, contributing to two championship victories. Demonstrated teamwork, leadership, and strategic thinking on the court.",
     icon: <FaBasketballBall className="text-orange-600 dark:text-orange-400" />,
