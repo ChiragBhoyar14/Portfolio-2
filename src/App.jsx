@@ -5,6 +5,7 @@ import About_Component from "./Component/About_Component";
 import Career_Component from "./Component/Career_Component";
 import Contact_Component from "./Component/Contact_Component";
 import MyProjects_Component from "./Component/MyProjects_Component";
+import InProgressProject_Component from "./Component/InProgressProject_Component";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -29,7 +30,8 @@ function App() {
       <Header_Component></Header_Component>
       <About_Component></About_Component>
       <Career_Component></Career_Component>
-      <MyProjects_Component></MyProjects_Component>
+      {/* <MyProjects_Component></MyProjects_Component> */}
+      <InProgressProject_Component></InProgressProject_Component>
       <Contact_Component></Contact_Component>
       </>
       }
