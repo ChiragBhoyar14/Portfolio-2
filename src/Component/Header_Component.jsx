@@ -62,9 +62,14 @@ const Header_Component = ({ darkMode }) => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight mb-4 transform transition-transform duration-300 hover:scale-105 hover:text-yellow-300">
+            <motion.h1
+              className="text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight mb-4 transform transition-transform duration-300 hover:scale-105 hover:text-yellow-300"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
               Hi, I'm Chirag Bhoyar,<br className="lg:hidden" /> a .NET Software Developer
-            </h1>
+            </motion.h1>
             <p className="text-lg lg:text-xl font-light mb-6 lg:mb-8 transition duration-300 hover:text-yellow-400">
               Crafting scalable software solutions with passion and precision.
             </p>
@@ -112,7 +117,7 @@ const Header_Component = ({ darkMode }) => {
                 href="https://www.linkedin.com/in/chirag-bhoyar-725747286/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-200 hover:text-yellow-300 transition duration-300"
+                className="text-gray-700 dark:text-gray-300 hover:text-yellow-300 transition duration-300"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -122,7 +127,7 @@ const Header_Component = ({ darkMode }) => {
                 href="https://github.com/ChiragBhoyar14"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-200 hover:text-yellow-300 transition duration-300"
+                className="text-gray-700 dark:text-gray-300 hover:text-yellow-300 transition duration-300"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -130,7 +135,7 @@ const Header_Component = ({ darkMode }) => {
               </motion.a>
               <motion.a
                 href="mailto:email@example.com"
-                className="text-gray-200 hover:text-red-400 transition duration-300"
+                className="text-gray-700 dark:text-gray-300 hover:text-red-400 transition duration-300"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
