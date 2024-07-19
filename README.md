@@ -7,4 +7,3 @@ Welcome to my personal portfolio repository! I am Chirag Bhoyar, a junior full s
 - **React.js**: Built with React.js for a modern, fast, and responsive user interface.
 - **Modular Codebase**: Organized and modular code for easy maintenance and scalability.
 - **Responsive Design**: Ensures a seamless experience across various devices and screen sizes.
-- **Dynamic Content**: Displays real-time updates as I continue to work on new projects.
