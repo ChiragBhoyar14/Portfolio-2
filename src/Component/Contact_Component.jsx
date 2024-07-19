@@ -47,7 +47,6 @@ const Contact_Component = () => {
               <p className="text-lg lg:text-xl font-bold">
                 "Great things never come from comfort zones."
               </p>
-            
             </div>
           </div>
 
@@ -57,7 +56,6 @@ const Contact_Component = () => {
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                 Get In Touch
               </h2>
-            <spam></spam>
             </div>
 
             {/* Contact Details */}
@@ -90,7 +88,7 @@ const Contact_Component = () => {
             </div>
 
             {/* Contact Form */}
-            <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6 md:grid-cols-2">
               {/* Name Input */}
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
@@ -122,7 +120,7 @@ const Contact_Component = () => {
                 />
               </div>
               {/* Subject Input */}
-              <div className="col-span-2">
+              <div className="md:col-span-2">
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                   Subject
                 </label>
@@ -137,7 +135,7 @@ const Contact_Component = () => {
                 />
               </div>
               {/* Message Input */}
-              <div className="col-span-2">
+              <div className="md:col-span-2">
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                   Message
                 </label>
@@ -152,7 +150,7 @@ const Contact_Component = () => {
                 ></textarea>
               </div>
               {/* Submit Button */}
-              <div className="col-span-2 flex justify-end">
+              <div className="md:col-span-2 flex justify-end">
                 <button
                   type="submit"
                   className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
