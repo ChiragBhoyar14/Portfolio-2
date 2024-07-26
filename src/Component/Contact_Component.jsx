@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import sendMessage from "../scripts/contactmodule";
+
 import { FaMobileAlt, FaWhatsapp, FaEnvelope, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Contact_Component = () => {
@@ -19,6 +21,7 @@ const Contact_Component = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    sendMessage(formData);
     console.log(formData); // For testing purposes - replace with your logic for form submission
     setFormData({
       name: "",
