@@ -4,22 +4,22 @@ import React from "react";
 
 const projects = [
   {
-    title: "Project One",
-    description: "A brief description of Project One. It's a web application that does amazing things.",
-    image: "https://via.placeholder.com/300",
-    link: "https://example.com/project-one"
+    title: "Blood Doner API's",
+    description: "The BloodBank API is a .NET-based application designed to manage blood donor information. It provides functionality for user registration, login, searching available blood donors, and more. The API uses JWT (JSON Web Tokens) for secure authentication and supports various operations related to blood donation.",
+    image: "./Images/ApiImage.png",
+    link: "https://github.com/ChiragBhoyar14/BloodBankAPI"
   },
   {
-    title: "Project Two",
-    description: "A brief description of Project Two. It's a mobile app that simplifies tasks.",
-    image: "https://via.placeholder.com/300",
-    link: "https://example.com/project-two"
+    title: "Personsl Portfolio",
+    description: "I am currently developing my personal portfolio to showcase my skills as a junior full stack .NET developer. This project highlights my expertise in creating dynamic and responsive web applications, utilizing the latest technologies for an optimal user experience.",
+    image: "./Images/Portfolio.png",
+    link: "https://github.com/ChiragBhoyar14/Portfolio-2"
   },
   {
-    title: "Project Three",
-    description: "A brief description of Project Three. An innovative project that solves real-world problems.",
-    image: "https://via.placeholder.com/300",
-    link: "https://example.com/project-three"
+    title: "Blood Doner UI",
+    description: "BloodDoner is an ASP.NET Core MVC web application that allows users to register as blood donors, log in, and view available donors. The application integrates with external APIs to manage and retrieve donor information. It utilizes JWT for authentication and session management.",
+    image: "./Images/BloodDonationUI.jpg",
+    link: "https://github.com/ChiragBhoyar14/BloodDonerUI"
   }
 ];
 

@@ -30,8 +30,8 @@ function App() {
       <Header_Component></Header_Component>
       <About_Component></About_Component>
       <Career_Component></Career_Component>
-      {/* <MyProjects_Component></MyProjects_Component> */}
-      <InProgressProject_Component></InProgressProject_Component>
+      <MyProjects_Component></MyProjects_Component>
+      {/* <InProgressProject_Component></InProgressProject_Component> */}
       <Contact_Component></Contact_Component>
       </>
       }
