@@ -35,9 +35,11 @@ function App() {
       </>
       }
       <button
-        className={`fixed bottom-4 right-4 bg-gray-800 text-white px-4 py-2 rounded-lg ${darkMode ? "bg-gray-300" : "bg-gray-800"}`}
-        onClick={toggleDarkMode}
-      >
+  className={`fixed bottom-4 right-4 px-4 py-2 rounded-lg text-white ${
+    darkMode ? "bg-gray-300 text-black" : "bg-gray-800"
+  }`}
+  onClick={toggleDarkMode}
+>
         {darkMode ? "Light Mode" : "Dark Mode"}
       </button>
     </div>
