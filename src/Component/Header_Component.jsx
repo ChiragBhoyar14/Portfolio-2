@@ -75,7 +75,7 @@ const Header_Component = ({ darkMode }) => {
             </p>
             {/* Introduction Section */}
             <motion.div
-              className={`bg-blue-200 dark:bg-blue-900 p-6 rounded-lg shadow-lg mb-6 lg:mb-8 hover:shadow-xl transform transition-shadow duration-300 hover:scale-105 ${darkMode ? 'text-gray-300' : 'text-gray-900'}`}
+              className={`bg-blue-200 dark: p-6 rounded-lg shadow-lg mb-6 lg:mb-8 hover:shadow-xl transform transition-shadow duration-300 hover:scale-105 ${darkMode ? 'text-gray-300' : 'text-gray-900'}`}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.5 }}
