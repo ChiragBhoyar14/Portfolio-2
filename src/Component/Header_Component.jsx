@@ -134,7 +134,7 @@ const Header_Component = ({ darkMode }) => {
                 <FaGithub size={30} />
               </motion.a>
               <motion.a
-                href="mailto:email@example.com"
+                href="mailto:chiragbhoyar143@gmail.com"
                 className="text-gray-700 dark:text-gray-300 hover:text-red-400 transition duration-300"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
