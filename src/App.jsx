@@ -5,6 +5,7 @@ import Career_Component from "./Component/Career_Component";
 import Contact_Component from "./Component/Contact_Component";
 import MyProjects_Component from "./Component/MyProjects_Component";
 import InProgressProject_Component from "./Component/InProgressProject_Component";
+import { BsSun, BsMoon } from "react-icons/bs";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -15,33 +16,48 @@ function App() {
 
   return (
     <div className={`app-container ${darkMode ? "dark" : ""}`}>
-      {/* <Router>
-        <Navbar_Component darkMode={darkMode} />
-        <Routes>
-          <Route path="/" element={<Header_Component darkMode={darkMode} />} />
-          <Route path="/about" element={<About_Component />} />
-          <Route path="/career" element={<Career_Component />} />
-          <Route path="/contact" element={<Contact_Component />} />
-          <Route path="/projects" element={<MyProjects_Component />} />
-        </Routes>
-      </Router> */
       <>
-      <Header_Component></Header_Component>
-      <About_Component></About_Component>
-      <Career_Component></Career_Component>
-      <MyProjects_Component></MyProjects_Component>
-      {/* <InProgressProject_Component></InProgressProject_Component> */}
-      <Contact_Component></Contact_Component>
+        <Header_Component />
+        <About_Component />
+        <Career_Component />
+        <MyProjects_Component />
+        <Contact_Component />
       </>
-      }
-      <button
-  className={`fixed bottom-4 right-4 px-4 py-2 rounded-lg text-white ${
-    darkMode ? "bg-gray-300 text-black" : "bg-gray-800"
-  }`}
-  onClick={toggleDarkMode}
->
-        {darkMode ? "Light Mode" : "Dark Mode"}
-      </button>
+
+      {/* Dark/Light Mode Toggle */}
+      <div
+        className="fixed bottom-4 right-4 flex items-center cursor-pointer"
+        onClick={toggleDarkMode}
+      >
+        {/* Slider Container */}
+        <div
+          className="relative w-16 h-8 bg-transparent rounded-full flex items-center border border-gray-400 dark:border-gray-600"
+        >
+          {/* Light/Dark Mode Indicators */}
+          <span
+            className={`absolute text-xl transition-transform duration-300 ${
+              darkMode ? "text-gray-400" : "text-gray-900"
+            }`}
+            style={{ left: "0.5rem" }}
+          >
+            <BsSun />
+          </span>
+          <span
+            className={`absolute text-xl transition-transform duration-300 ${
+              darkMode ? "text-gray-900" : "text-gray-400"
+            }`}
+            style={{ right: "0.5rem" }}
+          >
+            <BsMoon />
+          </span>
+          <div
+            className={`absolute bg-white w-6 h-6 rounded-full shadow-md transform transition-transform duration-300 ease-in-out border border-gray-400 dark:border-gray-600 ${
+              darkMode ? "translate-x-8" : "translate-x-0"
+            }`}
+            style={{ left: "0.25rem" }}
+          ></div>
+        </div>
+      </div>
     </div>
   );
 }
