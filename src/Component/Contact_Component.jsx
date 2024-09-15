@@ -48,7 +48,7 @@ const Contact_Component = () => {
           <div className="bg-blue-600 dark:bg-blue-800 text-white py-6 px-8">
             <div className="text-center">
               <p className="text-lg lg:text-xl font-bold">
-                "Great things never come from comfort zones."
+                Give me one opportunity, and I’ll prove that I can exceed your expectations.
               </p>
             </div>
           </div>
