@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar_Component from "./Component/Navbar_Component";
 import Header_Component from "./Component/Header_Component";
 import About_Component from "./Component/About_Component";
 import Career_Component from "./Component/Career_Component";

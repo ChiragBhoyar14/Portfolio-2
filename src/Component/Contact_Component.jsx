@@ -64,15 +64,17 @@ const Contact_Component = () => {
             {/* Contact Details */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               {/* Phone */}
-              <div className="flex items-center">
-                <FaMobileAlt className="text-red-500 text-xl" />
-                <p className="ml-2 dark:text-white">{contactDetails.phone}</p>
-              </div>
+              <a href={`tel:${contactDetails.phone}`} className="flex items-center">
+              <FaMobileAlt className="text-red-500 text-xl" />
+              <p className="ml-2 dark:text-white">{contactDetails.phone}</p>
+              </a>
+
               {/* WhatsApp */}
-              <div className="flex items-center">
-                <FaWhatsapp className="text-green-500 text-xl" />
-                <p className="ml-2 dark:text-white">{contactDetails.whatsapp}</p>
-              </div>
+              <a href={`https://wa.me/${contactDetails.whatsapp}`} target="_blank" rel="noopener noreferrer" className="flex items-center">
+              <FaWhatsapp className="text-green-500 text-xl" />
+              <p className="ml-2 dark:text-white">{contactDetails.whatsapp}</p>
+              </a>
+
               {/* LinkedIn */}
               <div className="flex items-center">
                 <FaLinkedin className="text-blue-500 text-xl" />
