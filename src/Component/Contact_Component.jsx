@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaMobileAlt, FaWhatsapp, FaEnvelope, FaLinkedin, FaInstagram } from "react-icons/fa";
 import emailjs from "emailjs-com";
+import { TailSpin } from 'react-loader-spinner'; // Using TailSpin loader
 
 const Contact_Component = () => {
   const [formData, setFormData] = useState({
@@ -10,7 +11,8 @@ const Contact_Component = () => {
     message: ""
   });
 
-  const [isSubmitted, setIsSubmitted] = useState(false); 
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSending, setIsSending] = useState(false); // State to manage sending status
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,27 +24,35 @@ const Contact_Component = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsSending(true); // Start the sending animation
 
     emailjs
       .send(
-        "service_gqovrqf", // Replace with your EmailJS Service ID
-        "template_nv73ijl", // Replace with your EmailJS Template ID
+        "service_gqovrqf",
+        "template_nv73ijl",
         formData,
-        "O0K7fwhegnnIeiKhJ" // Replace with your EmailJS User ID
+        "O0K7fwhegnnIeiKhJ"
       )
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
-          setIsSubmitted(true); 
+          setIsSubmitted(true);
+          setIsSending(false); // Stop the sending animation
           setFormData({
             name: "",
             email: "",
             subject: "",
             message: ""
           });
+
+          // Hide success message after 5 seconds
+          setTimeout(() => {
+            setIsSubmitted(false);
+          }, 5000);
         },
         (err) => {
           console.error("FAILED...", err);
+          setIsSending(false); // Stop the sending animation
         }
       );
   };
@@ -223,8 +233,16 @@ const Contact_Component = () => {
               </div>
             </form>
 
+            {/* Loading Spinner */}
+            {isSending && (
+              <div className="flex justify-center items-center mt-6">
+                <TailSpin color="#007BFF" height={40} width={40} />
+                <p className="text-gray-500 dark:text-gray-300 ml-4">Sending your message...</p>
+              </div>
+            )}
+
             {/* Success Message */}
-            {isSubmitted && (
+            {isSubmitted && !isSending && (
               <p className="text-center mt-4 text-green-600 dark:text-green-400">
                 Message sent successfully! I'll get back to you soon.
               </p>
