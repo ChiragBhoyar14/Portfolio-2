@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "axios": "^1.7.2",
+    "emailjs-com": "^3.2.0",
     "flowbite": "^2.3.0",
     "flowbite-react": "^0.10.1",
     "framer-motion": "^11.2.12",

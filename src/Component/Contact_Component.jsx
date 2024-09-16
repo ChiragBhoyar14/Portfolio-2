@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import sendMessage from "../scripts/contactmodule";
-
 import { FaMobileAlt, FaWhatsapp, FaEnvelope, FaLinkedin, FaInstagram } from "react-icons/fa";
+import emailjs from "emailjs-com";
 
 const Contact_Component = () => {
   const [formData, setFormData] = useState({
@@ -11,28 +10,45 @@ const Contact_Component = () => {
     message: ""
   });
 
+  const [isSubmitted, setIsSubmitted] = useState(false); 
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    sendMessage(formData);
-    console.log(formData); // For testing purposes - replace with your logic for form submission
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: ""
-    });
+
+    emailjs
+      .send(
+        "service_gqovrqf", // Replace with your EmailJS Service ID
+        "template_nv73ijl", // Replace with your EmailJS Template ID
+        formData,
+        "O0K7fwhegnnIeiKhJ" // Replace with your EmailJS User ID
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setIsSubmitted(true); 
+          setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: ""
+          });
+        },
+        (err) => {
+          console.error("FAILED...", err);
+        }
+      );
   };
 
   const contactDetails = {
-    address: "SR Nagar, Hydrabad",
+    address: "SR Nagar, Hyderabad",
     phone: "9834194933",
     whatsapp: "9834194933",
     linkedin: "https://www.linkedin.com/in/chirag-bhoyar-725747286/",
@@ -65,30 +81,56 @@ const Contact_Component = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               {/* Phone */}
               <a href={`tel:${contactDetails.phone}`} className="flex items-center">
-              <FaMobileAlt className="text-red-500 text-xl" />
-              <p className="ml-2 dark:text-white">{contactDetails.phone}</p>
+                <FaMobileAlt className="text-red-500 text-xl" />
+                <p className="ml-2 dark:text-white">{contactDetails.phone}</p>
               </a>
 
               {/* WhatsApp */}
-              <a href={`https://wa.me/${contactDetails.whatsapp}`} target="_blank" rel="noopener noreferrer" className="flex items-center">
-              <FaWhatsapp className="text-green-500 text-xl" />
-              <p className="ml-2 dark:text-white">{contactDetails.whatsapp}</p>
+              <a
+                href={`https://wa.me/${contactDetails.whatsapp}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+              >
+                <FaWhatsapp className="text-green-500 text-xl" />
+                <p className="ml-2 dark:text-white">{contactDetails.whatsapp}</p>
               </a>
 
               {/* LinkedIn */}
               <div className="flex items-center">
                 <FaLinkedin className="text-blue-500 text-xl" />
-                <a href={contactDetails.linkedin} target="_blank" rel="noopener noreferrer" className="ml-2 hover:underline dark:text-white">LinkedIn</a>
+                <a
+                  href={contactDetails.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-2 hover:underline dark:text-white"
+                >
+                  LinkedIn
+                </a>
               </div>
+
               {/* Email */}
               <div className="flex items-center">
                 <FaEnvelope className="text-yellow-500 text-xl" />
-                <a href={`mailto:${contactDetails.email}`} className="ml-2 hover:underline dark:text-white">{contactDetails.email}</a>
+                <a
+                  href={`mailto:${contactDetails.email}`}
+                  className="ml-2 hover:underline dark:text-white"
+                >
+                  {contactDetails.email}
+                </a>
               </div>
+
               {/* Instagram */}
               <div className="flex items-center">
                 <FaInstagram className="text-purple-500 text-xl" />
-                <a href={contactDetails.instagram} target="_blank" rel="noopener noreferrer" className="ml-2 hover:underline dark:text-white">Instagram</a>
+                <a
+                  href={contactDetails.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-2 hover:underline dark:text-white"
+                >
+                  Instagram
+                </a>
               </div>
             </div>
 
@@ -96,7 +138,10 @@ const Contact_Component = () => {
             <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6 md:grid-cols-2">
               {/* Name Input */}
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                >
                   Name
                 </label>
                 <input
@@ -109,9 +154,13 @@ const Contact_Component = () => {
                   className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
                 />
               </div>
+
               {/* Email Input */}
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                >
                   Email
                 </label>
                 <input
@@ -124,9 +173,13 @@ const Contact_Component = () => {
                   className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
                 />
               </div>
+
               {/* Subject Input */}
               <div className="md:col-span-2">
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                <label
+                  htmlFor="subject"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                >
                   Subject
                 </label>
                 <input
@@ -139,9 +192,13 @@ const Contact_Component = () => {
                   className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
                 />
               </div>
+
               {/* Message Input */}
               <div className="md:col-span-2">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                >
                   Message
                 </label>
                 <textarea
@@ -154,6 +211,7 @@ const Contact_Component = () => {
                   className="mt-1 block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500 sm:text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
                 ></textarea>
               </div>
+
               {/* Submit Button */}
               <div className="md:col-span-2 flex justify-end">
                 <button
@@ -164,6 +222,13 @@ const Contact_Component = () => {
                 </button>
               </div>
             </form>
+
+            {/* Success Message */}
+            {isSubmitted && (
+              <p className="text-center mt-4 text-green-600 dark:text-green-400">
+                Message sent successfully! I'll get back to you soon.
+              </p>
+            )}
           </div>
         </div>
       </div>
