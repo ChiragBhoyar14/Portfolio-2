@@ -44,7 +44,7 @@ const About_Component = () => {
                 <li>Experience with JavaScript, HTML, and Tailwind CSS</li>
                 <li>Strong understanding of software architecture and design patterns</li>
                 <li>Good knowledge of SQL, Web API, and Windows Services</li>
-                <li>Familiar with MVC, Web API Core, Worker Services. React, Entity FrameWork</li>
+                <li>Familiar with MVC, Web API Core, Worker Services, React, Entity FrameWork.</li>
                 <li>Knowledge of Agile methodologies and tools like Git</li>
               </ul>
             </div>
