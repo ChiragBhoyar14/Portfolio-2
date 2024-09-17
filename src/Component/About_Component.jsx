@@ -41,10 +41,10 @@ const About_Component = () => {
               </h3>
               <ul className="text-gray-700 dark:text-gray-300 list-disc list-inside">
                 <li>Proficient in .NET, C#, ASP.NET Core</li>
-                <li>Experience with React, JavaScript, HTML, and Tailwind CSS</li>
+                <li>Experience with JavaScript, HTML, and Tailwind CSS</li>
                 <li>Strong understanding of software architecture and design patterns</li>
                 <li>Good knowledge of SQL, Web API, and Windows Services</li>
-                <li>Familiar with MVC, Web API Core, Worker Services</li>
+                <li>Familiar with MVC, Web API Core, Worker Services. React, Entity FrameWork</li>
                 <li>Knowledge of Agile methodologies and tools like Git</li>
               </ul>
             </div>
