@@ -9,7 +9,7 @@ const Career_Component = () => {
       company: "Revalsys Technology",
       period: "Sep 2023 - Present",
       description: `
-         Developing scalable web applications using ASP.NET and .NET.
+         Developing scalable web applications using ASP.NET and .NET Core.
          Working on RESTful APIs to enhance application interconnectivity.
          Implementing and managing Windows Services for various applications.
          Utilizing ADO.NET for efficient database interactions.
