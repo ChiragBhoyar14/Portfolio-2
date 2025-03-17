@@ -9,12 +9,12 @@ const Career_Component = () => {
       company: "Revalsys Technology",
       period: "Sep 2023 - Nov 2024",
       description: `
-         Developing scalable web applications using ASP.NET and .NET Core.
-         Working on RESTful APIs to enhance application interconnectivity.
-         Implementing and managing Windows Services for various applications.
-         Utilizing ADO.NET for efficient database interactions.
-         Engaging with SQL Server for database management and query optimization.
-         Developing and consuming WCF (Windows Communication Foundation) services.
+         Built web apps using ASP.NET, ADO.NET, and Web API to make them faster and easier to use.
+         Created a Windows Service to process bills automatically, reducing mistakes and manual work.
+         Tested code carefully to catch bugs early and prevent issues in production.
+         Improved SQL queries and stored procedures to speed up the database and updated the UI as needed.
+         Used Dependency Injection and Factory Design Pattern to keep the code clean and scalable.
+         Worked with teams, understood business needs, and tracked projects using Jira.
       `,
       icon: <FaBriefcase className="text-blue-600 dark:text-blue-400" />,
     },
@@ -23,12 +23,12 @@ const Career_Component = () => {
       company: "TheRapidHire Pvt Ltd.",
       period: "Dec 2024 - Present",
       description: `
-        Developed and optimized SQL Server stored procedures, ensuring efficient data management and integrity. 
-        Built backend logic in C# for ETL workflows and implemented automated data cleanup in ASP.NET MVC. 
-        Worked on cloud data transformation using Azure Data Factory, Linked Services, and Databricks. 
-        Integrated on-premise and cloud-based ETL solutions, streamlining data migration processes. 
-        Designed and implemented Windows Services for automating background data processing tasks. 
-        Collaborated with US-based clients, participated in Scrum meetings, and managed tasks using Rally. 
+        Created and improved SQL Server stored procedures to manage data efficiently.
+        Wrote backend code in C# for ETL tasks and automated data cleanup in ASP.NET MVC.
+        Used Azure Data Factory, Linked Services, and Databricks for cloud data processing.
+        Combined on-premise and cloud ETL systems to make data migration easier.
+        Built Windows Services to handle background data tasks automatically.
+        Worked with US clients, joined Scrum meetings, and tracked tasks in Rally.
       `,
       icon: <FaBriefcase className="text-blue-600 dark:text-blue-400" />,
     },
