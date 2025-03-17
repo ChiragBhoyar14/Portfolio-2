@@ -85,7 +85,9 @@ const About_Component = () => {
                 Projects & Interests
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
-                 Enthusiastic about contributing to open-source projects and continuously exploring emerging technologies. Passionate about Web API development, backend optimization, and integrating scalable solutions to enhance application performance.            </div>
+                 Enthusiastic about contributing to open-source projects and continuously exploring emerging technologies. Passionate about Web API development, backend optimization, and integrating scalable solutions to enhance application performance.          
+                </p>
+              </div>
           </div>
         </div>
       </div>
