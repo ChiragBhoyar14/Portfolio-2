@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCode, FaTools, FaGraduationCap, FaBriefcase, FaLightbulb } from "react-icons/fa";
-
+  
 const About_Component = () => {
   return (
     <section className="bg-gray-100 dark:bg-gray-900 py-24 lg:py-32 transition-colors duration-500">
