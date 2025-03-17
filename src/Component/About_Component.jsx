@@ -40,12 +40,18 @@ const About_Component = () => {
                 Skills
               </h3>
               <ul className="text-gray-700 dark:text-gray-300 list-disc list-inside">
-                <li>Proficient in .NET, C#, ASP.NET Core</li>
-                <li>Experience with JavaScript, HTML, and Tailwind CSS</li>
-                <li>Strong understanding of software architecture and design patterns</li>
-                <li>Good knowledge of SQL, Web API, and Windows Services</li>
-                <li>Familiar with MVC, Web API Core, Worker Services, React, Entity FrameWork.</li>
-                <li>Knowledge of Agile methodologies and tools like Git</li>
+                  <li><strong>Proficient in:</strong> .NET, C#, ASP.NET Core</li>
+                  <li><strong>Experience with:</strong> JavaScript, HTML, and Tailwind CSS</li>
+                  <li><strong>Strong understanding of:</strong> software architecture and design patterns</li>
+                  <li><strong>Good knowledge of:</strong> SQL, Web API, and Windows Services</li>
+                  <li><strong>Familiar with:</strong> MVC, Web API Core, Worker Services, React (Basics), Entity Framework</li>
+                  <li><strong>Knowledge of:</strong> Agile methodologies and tools like Git</li>
+                  <li><strong>Languages:</strong> C#, SQL, Python (Basics), JavaScript</li>
+                  <li><strong>Frameworks:</strong> ASP.NET, ASP.NET MVC, ASP.NET Core, ASP.NET Core MVC, ASP.NET Core Web API, Entity Framework</li>
+                  <li><strong>Technologies:</strong> React.js (Basics), ASP.NET Web API, Windows Services, Unit Testing in .NET</li>
+                  <li><strong>Cloud & DevOps:</strong> Azure Data Factory, Azure DevOps, Azure Linked Services</li>
+                  <li><strong>Big Data & Databases:</strong> Databricks, Databricks SQL</li>
+                  <li><strong>Tools:</strong> Visual Studio, SQL Server Management Studio (SSMS), Postman, Git, Azure Portal, NUnit</li>
               </ul>
             </div>
 
@@ -56,7 +62,8 @@ const About_Component = () => {
                 Experience
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
-                Over a year of experience in developing robust web applications and providing comprehensive project support. Demonstrated ability to lead development teams effectively, ensuring the delivery of high-quality software solutions within deadlines. Skilled in leveraging modern web technologies to solve complex problems and enhance user experiences.
+                  <strong>.NET Core MVC Developer with 1+ Year of Experience</strong>
+                  Highly skilled .NET Core MVC Developer with over a year of experience in designing, developing, and optimizing web applications. Proficient in ASP.NET Core MVC, ADO.NET, SQL Server, and Windows Services, with a strong focus on performance, scalability, and security. Adept at integrating APIs, implementing authentication mechanisms (JWT, cookies), and enhancing system efficiency using caching techniques like Microsoft.Cache and Lazy.Cache.Proven ability to lead development teams, troubleshoot complex issues, and ensure timely delivery of high-quality software solutions. Passionate about continuous learning, currently expanding expertise in Python and Data Engineering. Seeking opportunities to apply technical proficiency in a challenging and growth-oriented environment.
               </p>
             </div>
 
@@ -78,9 +85,7 @@ const About_Component = () => {
                 Projects & Interests
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
-                Enthusiastic about contributing to open-source projects and constantly exploring new technologies. Interests include Web API.
-              </p>
-            </div>
+                 Enthusiastic about contributing to open-source projects and continuously exploring emerging technologies. Passionate about Web API development, backend optimization, and integrating scalable solutions to enhance application performance.            </div>
           </div>
         </div>
       </div>
