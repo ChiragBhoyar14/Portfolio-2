@@ -9,12 +9,13 @@ const Career_Component = () => {
       company: "Revalsys Technology",
       period: "Sep 2023 - Nov 2024",
       description: `
-         Built web apps using ASP.NET, ADO.NET, and Web API to make them faster and easier to use.
-         Created a Windows Service to process bills automatically, reducing mistakes and manual work.
-         Tested code carefully to catch bugs early and prevent issues in production.
-         Improved SQL queries and stored procedures to speed up the database and updated the UI as needed.
-         Used Dependency Injection and Factory Design Pattern to keep the code clean and scalable.
-         Worked with teams, understood business needs, and tracked projects using Jira.
+          Developing scalable web applications using ASP.NET and .NET Core.
+          Working on RESTful APIs to enhance application interconnectivity.
+          Implementing and managing Windows Services for various applications.
+          Utilizing ADO.NET for efficient database interactions.
+          Engaging with SQL Server for database management and query optimization.
+          Developing and consuming WCF (Windows Communication Foundation) services.
+          Worked with teams, understood business needs, and tracked projects using Jira.
       `,
       icon: <FaBriefcase className="text-blue-600 dark:text-blue-400" />,
     },
