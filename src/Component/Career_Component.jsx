@@ -7,7 +7,7 @@ const Career_Component = () => {
     {
       title: "Junior .NET Developer",
       company: "Revalsys Technology",
-      period: "Sep 2023 - Present",
+      period: "Sep 2023 - Nov 2024",
       description: `
          Developing scalable web applications using ASP.NET and .NET Core.
          Working on RESTful APIs to enhance application interconnectivity.
@@ -18,7 +18,20 @@ const Career_Component = () => {
       `,
       icon: <FaBriefcase className="text-blue-600 dark:text-blue-400" />,
     },
-  
+    {
+      title: ".NET Developer",
+      company: "TheRapidHire Pvt Ltd.",
+      period: "Dec 2024 - Present",
+      description: `
+        Developed and optimized SQL Server stored procedures, ensuring efficient data management and integrity. 
+        Built backend logic in C# for ETL workflows and implemented automated data cleanup in ASP.NET MVC. 
+        Worked on cloud data transformation using Azure Data Factory, Linked Services, and Databricks. 
+        Integrated on-premise and cloud-based ETL solutions, streamlining data migration processes. 
+        Designed and implemented Windows Services for automating background data processing tasks. 
+        Collaborated with US-based clients, participated in Scrum meetings, and managed tasks using Rally. 
+      `,
+      icon: <FaBriefcase className="text-blue-600 dark:text-blue-400" />,
+    },
   
     {
       title: "Completed .NET Full Stack Training",
