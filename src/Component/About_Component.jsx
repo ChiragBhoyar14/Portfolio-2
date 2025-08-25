@@ -62,7 +62,7 @@ const About_Component = () => {
                 Experience
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
-                <strong>.NET Core MVC Developer with 1+ Year of Experience</strong><br />
+                <strong>.NET Core MVC Developer with 2+ Year of Experience</strong><br />
                 Highly skilled .NET Core MVC Developer with over a year of experience in designing, developing, and optimizing web applications. 
                 Proficient in ASP.NET Core MVC, ADO.NET, SQL Server, and Windows Services, with a strong focus on performance, scalability, and security. 
                 Adept at integrating APIs, implementing authentication mechanisms (JWT, cookies), and enhancing system efficiency using caching techniques like Microsoft.Cache and Lazy.Cache.
